@@ -1,0 +1,7 @@
+body { margin: 1em; }
+section#symbol-lookup { width: 300px; }
+label[for="symbol"] { width: 120px; font-weight: bold; }
+input#symbol { width: 120px; }
+button#get-symbol { width: 40px; }
+div.clear { clear: both; }
+

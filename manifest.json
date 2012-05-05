@@ -1,0 +1,24 @@
+{
+	"name": "Finance Panel",
+	"version": "1.0.0",
+	"manifest_version": 2,
+
+	"browser_action": {
+		"default_icon": "img/logo.png",
+		"default_title": "Finance Panel",
+		"default_popup": "html/start.html"
+	},
+
+	"background": {
+	},
+
+	"permissions": [
+		"tabs",
+		"webNavigation",
+		"http://www.google.com/finance.*",
+		"http://finance.google.com/.*",
+		"http://finance.yahoo.com/.*",
+		"http://money.msn.com/.*"
+	]
+}
+	
