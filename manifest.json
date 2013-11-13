@@ -21,6 +21,7 @@
 			"matches": [
 				"http://finance.yahoo.com/*s=*",
 				"https://www.google.com/finance?q=*",
+				"http://www.google.com/finance?q=*",
 				"http://money.msn.com/*Symbol=*",
 				"http://investing.money.msn.com/*Symbol=*"
 			],
