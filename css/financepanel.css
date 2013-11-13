@@ -1,46 +1,65 @@
-#financepanel-container {
-	padding: 0;
-	margin: 0;
-	text-align: left;
-	box-sizing: border-box;
+@media screen {
+	#financepanel-container {
+		padding: 0;
+		margin: 0;
+		text-align: left;
+		box-sizing: border-box;
 
-	position: fixed;
-	top: 0;
-	right: 0;
-	width: 200px;
-	height: 20px;
-	background: none rgb(220, 220, 220);
-	border-style: solid;
-	border-color: black;
-	border-width: 0 0 1px 1px;
-	font-family: sans-serif;
-	font-size: 12px;
-	line-height: 16px;
-	z-index: 999999;
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 200px;
+		height: 20px;
+		background: none rgb(220, 220, 220);
+		border-style: solid;
+		border-color: black;
+		border-width: 0 0 1px 1px;
+		font-family: sans-serif;
+		font-size: 12px;
+		line-height: 16px;
+		z-index: 999999;
+	}
+
+	#financepanel-container img.fp-favicon {
+		width: 16px;
+		height: 16px;
+		float: left;
+	}
+
+	#financepanel-container button {
+		background: none !important;
+		border: none; 
+		padding: 0 !important;
+		/*border is optional*/
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	#financepanel-container.yahoo-com button#fp-view-on-yahoo {
+		display: none;
+	}
+	#financepanel-container.msn-com button#fp-view-on-msn {
+		display: none;
+	}
+	#financepanel-container.google-com button#fp-view-on-google {
+		display: none;
+	}
 }
 
-#financepanel-container img.fp-favicon {
-	width: 16px;
-	height: 16px;
-	float: left;
+@media print {
+	#financepanel-container {
+		display: none;
+	}
+
+	/* Begin Google-specific styles */
+	#fs-type-tabs, #appbar, #gb, #gf-foot, .gf-table-control-plain, .g-unit.g-first, .viz_charts {
+		display: none;
+	}
+
+	#gf-viewc, .g-unit {
+		margin-left: 0;
+	}
+	/* End Google-specific styles */
 }
 
-#financepanel-container button {
-	background: none !important;
-	border: none; 
-	padding: 0 !important;
-	/*border is optional*/
-	text-decoration: underline;
-	cursor: pointer;
-}
-
-#financepanel-container.yahoo-com button#fp-view-on-yahoo {
-	display: none;
-}
-#financepanel-container.msn-com button#fp-view-on-msn {
-	display: none;
-}
-#financepanel-container.google-com button#fp-view-on-google {
-	display: none;
-}
 

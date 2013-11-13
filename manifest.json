@@ -30,7 +30,8 @@
 				"js/jquery.buildr.min.js",
 				"js/URI.min.js",
 				"js/panel.js"
-			]
+			],
+			"run_at": "document_end"
 		}
 	],
 	"web_accessible_resources": [
