@@ -16,13 +16,36 @@
 		"persistent": true
 	},
 
+	"content_scripts": [
+		{
+			"matches": [
+				"http://finance.yahoo.com/*s=*",
+				"https://www.google.com/finance?q=*",
+				"http://money.msn.com/*Symbol=*",
+				"http://investing.money.msn.com/*Symbol=*"
+			],
+			"css": ["css/financepanel.css"],
+			"js": [
+				"js/jquery.min.js",
+				"js/jquery.buildr.min.js",
+				"js/URI.min.js",
+				"js/panel.js"
+			]
+		}
+	],
+	"web_accessible_resources": [
+		"css/financepanel.css"
+	],
 	"permissions": [
 		"tabs",
 		"webNavigation",
 		"http://www.google.com/finance.*",
+		"https://www.google.com/finance.*",
 		"http://finance.google.com/.*",
+		"https://finance.google.com/.*",
 		"http://finance.yahoo.com/.*",
-		"http://money.msn.com/.*"
+		"http://money.msn.com/.*",
+		"http://investing.money.msn.com/.*"
 	]
 }
 	
